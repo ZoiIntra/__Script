@@ -483,7 +483,9 @@ body {
 @container body style(--unrounding: on) {
     *,
     *::before,
-    *::after {}
+    *::after {
+        border-radius: 0 !important;
+    }
 
     .svg_cc5dd2 > mask,
     .svg__44b0c > rect,
@@ -553,4 +555,12 @@ body {
     .slider__87bf1 > rect[rx='10'] {
         rx: 0 !important;
     }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 0 !important;
+    }
+}
+
+img {
+    border-radius: 50% !important;
 }
